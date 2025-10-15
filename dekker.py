@@ -55,11 +55,11 @@ def Hilo2():
             hilo2QuiereEntrar = True
 
         # Sección crítica
-        print("🧩 Hilo 2 entra a la sección crítica")
+        print(" Hilo 2 entra a la sección crítica")
         valor = contador_compartido
         time.sleep(random.uniform(0.1, 0.2))
         contador_compartido = valor + 1
-        print("✅ Hilo 2 sale de la sección crítica. Contador =", contador_compartido)
+        print(" Hilo 2 sale de la sección crítica. Contador =", contador_compartido)
 
         # Sección de salida
         hilo2QuiereEntrar = False
